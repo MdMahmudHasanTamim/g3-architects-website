@@ -1,0 +1,140 @@
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800;900&display=swap');
+</style>
+
+/*SHARED STYLE*/
+
+*{
+    font-family: 'Work Sans', sans-serif;
+}
+
+.btn-primary{
+    border-radius: 8px;
+    background: #FF900E;
+    color: #fff;
+    padding: 20px 25px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 1.25rem;
+    border: 0;
+    
+
+}
+
+/*HEADER START*/
+
+header{
+    background: rgba(255, 144, 14, 0.10);
+    padding: 50px 240px;
+
+}
+
+.nav-title{
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: var(--Dark-01, #131313);
+
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav > ul{
+    display: flex;
+}
+
+nav li{
+    list-style: none;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 26px;
+    margin-right: 30px;
+}
+
+nav a{
+    text-decoration: none;
+    color: color: var(--Dark-02, #424242);
+}
+
+.banner-content{
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.banner-title{
+    font-size: 4rem;
+    font-weight: 700;
+    color: #131313;
+}
+
+.banner-descrip{
+    color: #727272;
+    font-size: 1rem;
+
+}
+
+.banner img{
+    width: 100%;
+    margin-top: 20px;
+}
+
+/*MAIN SECTION*/
+
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.teams-container{
+    display: flex;
+    align-items: center;
+}
+
+.teams-container-img{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.5rem;
+}
+.teams-content{
+    padding: 0 70px;
+}
+
+.teams-title{
+    font-size: 2.8rem;
+}
+
+.teams-title .qiick-list{
+    color: #727272;
+    font-weight: 500;
+}
+
+.teams-title .text-feature{
+    color: #FF900E;
+    font-weight: 700;
+}
+
+/* RESPONSIVE MEDIA QUERIES */
+/*MOBILE SCREEN*/
+
+@media screen and (max-width: 576px) {
+    header{
+        padding: 20px;
+    }
+    nav{
+        flex-direction: column;
+    }
+}
+/* TAB SCREEN*/
+@media screen and (min-width:576px) and (max-width: 960px) {
+    header{
+        padding: 35px;
+    }
+    nav{
+        flex-direction: column;
+    }
+}
